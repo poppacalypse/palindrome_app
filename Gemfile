@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'sinatra', '2.0.3'
-gem 'rerun',   '0.13.0'
+gem 'sinatra',                 '2.0.3'
+gem 'rerun',                   '0.13.0'
+gem 'poppacalypse_palindrome', '0.2.0'
 
 group :test do
   gem 'minitest',           '5.11.3'

@@ -40,8 +40,8 @@ class PalindromeAppTest < Minitest::Test
 
     # We can also factor the title content like this:
     title_content = doc(last_response).at_css('title').content
-    # assert_equal "Palindrome App | About", title_content
-    assert_equal "#{@base_title} | About", title_content
+    assert_equal "Palindrome App | About", title_content
+    # assert_equal "#{@base_title} | About", title_content
   end
 
   def test_palindrome
