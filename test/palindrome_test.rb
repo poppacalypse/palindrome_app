@@ -16,7 +16,7 @@ class PalindromeAppTest < Minitest::Test
     # post '/check', { phrase: "Not a palindrome" }
 
     # When a hash is the final argument in a list of arguments, we can omit the curly braces
-    post 'check', phrase: "Not a palindrome"
+    post '/check', phrase: "Not a palindrome"
 
     # assert doc(last_response).at_css('p').content.include? "isn't a palindrome"
 
@@ -26,7 +26,7 @@ class PalindromeAppTest < Minitest::Test
   end
 
   def test_palindrome_submission
-    post 'check', phrase: "Able was I, ere I saw Elba."
+    post '/check', phrase: "Able was I, ere I saw Elba."
     assert_includes doc(last_response).at_css('p').content, "is a palindrome"
   end
 end
